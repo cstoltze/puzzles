@@ -9,6 +9,7 @@ from reconstruct import reconstruct
         pytest.param("owoztneoer", "012"),
         pytest.param("fviefuro", "45"),
         pytest.param("zerozerozero", "000"),
+        pytest.param("sevenonezero", "017", id="recursive, one has no unique_chars"),
     ],
 )
 def test_reconstruct(test_input, expected):
